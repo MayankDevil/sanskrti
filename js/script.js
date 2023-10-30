@@ -23,7 +23,26 @@ try
             </section>
         `)
     }
+    function header()
+    {
+        return (`
+            <header>
 
+                <h1> अष्टकम: </h1>
+                
+            </header>
+        `)
+    }
+    function footer()
+    {
+        return (`
+            <footer>
+
+                <h6> मयंक </h6>
+                
+            </footer>
+        `)
+    }
     var kaalabhiravam = [
         {
             shlok : ` देवराजसेव्यमानपावनांघ्रिपङ्कजं व्यालयज्ञसूत्रमिन्दुशेखरं कृपाकरम् । नारदादियोगिवृन्दवन्दितं दिगंबरं काशिकापुराधिनाथकालभैरवं भजे ॥१॥ `,
@@ -73,9 +92,11 @@ try
         }
     ].forEach((element) => {
 
-        main.insertAdjacentHTML("afterend",prakat(element))
+        main.insertAdjacentHTML("beforeend",prakat(element))
     })
 
+    main.insertAdjacentHTML("beforebegin",header())
+    main.insertAdjacentHTML("afterend",footer())
 
     console.log(kaalabhiravam)
 }
