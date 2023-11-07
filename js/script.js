@@ -28,7 +28,7 @@ try
         return (`
             <header>
 
-                <h1> अष्टकम: </h1>
+                <div> अष्टकम: </div>
                 
             </header>
         `)
@@ -38,7 +38,7 @@ try
         return (`
             <footer>
 
-                <h6> मयंक </h6>
+                <div>  rootkali { मयंक } ER012365203 </div>
                 
             </footer>
         `)
