@@ -8,7 +8,7 @@
     margin:0;
     padding: 0;
     font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji";
-    color:#343a40;
+    color:#442433;
     text-decoration: none;
     font-weight: normal;
     border: none;
@@ -34,18 +34,10 @@ body
     padding:0;
     display:grid;
 }
-header
-{
-    background: linear-gradient(200deg,#ff7979,#ffbe76 10%,#f5f6fa 80%);
-}
-footer
-{
-    
-}
 section
 {
     /* padding: 1rem; */
-    background:#f8f9fa;
+    background: #fffaf4;
 }
 section div
 {
@@ -59,8 +51,8 @@ section div
 {
     line-height: 3rem;
     font-size: 2rem;
-    color:#f0932b;
-    background:#fff3cd;
+    color:#ff8458;
+    background:#fee4d3;
     border-radius: 1rem;
 }
 .arth
