@@ -1,7 +1,7 @@
 /*
--   
+-   sanskrit "भारीतय सभ्यत "
 -   Designed | Develped by MayankDevil
--   
+-   https://github.com/MayankDevil/sanskrti 
 -   CSS ./css/style.css
 */
 *{
@@ -19,36 +19,33 @@ html
 {
     scroll-snap-type: y mandatory ;
 }
-header,
-footer,
 section
 {
     scroll-snap-align: center;
     display: grid;
-    place-content: center center;
-    height:100vh;
-    /* border: 1px solid #343a40; */
+    place-content: space-evenly;
+    min-height:80vh;
+    /* border: 1px dotted #442433; */
 }
 body
 {
     padding:0;
     display:grid;
 }
+/*
+    section css -------------------
+*/
 section
 {
-    /* padding: 1rem; */
-    background: #fffaf4;
-}
-section div
-{
     max-width: 800px;
-    margin: 3rem auto;
+    margin: 10vh auto;
     padding: 1rem;
     text-align: center;
     line-height: 2rem;
 }
 .shlok
 {
+    padding: 1rem;
     line-height: 3rem;
     font-size: 2rem;
     color:#ff8458;
@@ -64,6 +61,19 @@ section div
 {
     font-size: 1rem;
 }
+
+#header
+{
+    min-height: 100vh;
+    background: #fff url(../data/4.jpg) no-repeat;
+    background-size: contain;
+    background-blend-mode:overlay;
+}
+/*
+    ------------------------
+    | responsive media CSS | 
+    ------------------------
+*/
 @media screen and (max-widt:780PX)
 {
     section div
