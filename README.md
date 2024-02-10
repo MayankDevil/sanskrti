@@ -1,9 +1,7 @@
 
-# भारीतय सभ्यत 
+# प्राचीन भारीतय सभ्यत 
 
-Description : __ प्राचीन भारतीय __
-
-URL : https://github.com/MayankDevil/sanskrti
+URL : <https://github.com/MayankDevil/sanskrti>
 
 # warning
 
