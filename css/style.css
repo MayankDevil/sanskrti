@@ -33,6 +33,10 @@ body
     display:grid;
     background: #ffefe4;
 }
+body .links
+{
+    display:block;
+}
 /*
     section css -------------------
 */
@@ -85,11 +89,12 @@ section
 }
 #header a
 {
-    display: inline-block;
+    display: block;
+    padding:1rem;
     line-height: 1rem;
     font-size: 1rem;
     color:#000;
-    border-bottom: 1px solid #442433;
+    // border-bottom: 1px solid #442433;
 }
 #header a:hover
 {
