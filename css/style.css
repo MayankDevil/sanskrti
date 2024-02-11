@@ -33,10 +33,7 @@ body
     display:grid;
     background: #ffefe4;
 }
-body .links
-{
-    display:block;
-}
+
 /*
     section css -------------------
 */
@@ -66,15 +63,54 @@ section
 {
     font-size: 1rem;
 }
+/*
+    main css -----------------------
+*/
 #main
 {
     text-align: center;
 }
+.container
+{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h3
+{
+    font-size: 1.5rem;
+    line-height: 5rem;  
+}
+.center
+{
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+.links
+{
+    display: inline-block;
+    padding:1px;
+    line-height: 1rem;
+    font-size: 1rem;
+    color:#000;
+}
+.links:hover
+{
+    font-weight: bold;
+    border-bottom: 1px solid #442433;
+}
+.kala
+{
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 86% 86%, 71% 79%, 69% 61%, 42% 49%, 35% 31%, 14% 24%);
+    background:#ffffff;
+}
+/*
+    header css ---------------------
+*/
 #header
 {
-    min-height: 80vh;
+    min-height: 70vh;
 }
-#header div
+#header #logo_box
 {
     margin:5rem auto;
 }
@@ -87,19 +123,9 @@ section
     background: #fee4d3;
     clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 }
-#header a
-{
-    display: block;
-    padding:1rem;
-    line-height: 1rem;
-    font-size: 1rem;
-    color:#000;
-    // border-bottom: 1px solid #442433;
-}
-#header a:hover
-{
-    font-weight: bold;
-}
+/*
+    footer css --------------------
+*/
 #footer
 {
     padding: 1rem;
@@ -107,10 +133,162 @@ section
     line-height: 3rem;
     border-top: 1px dotted #6c757d;
 }
-.container
+/*
+    --------
+    [ maya ] illustion css
+    --------
+*/
+#maya
 {
-    max-width: 1000px;
-    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* height: 50vh; */
+    /* width: 30%; */
+    padding: 1rem;
+    background:transparent;
+}
+#maya .anka
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #442433;
+}
+#maya .anka:nth-child(1)
+{
+    top:2%;
+    left: 5%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(2)
+{
+    top:10%;
+    left: 3%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(3)
+{
+    top:19%;
+    left: 4%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(4)
+{
+    top:30%;
+    left: 15%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(5)
+{
+    top:25%;
+    left: 13%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(6)
+{
+    top:90%;
+    left: 3%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(7)
+{
+    top:33%;
+    left: 3%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(8)
+{
+    top:70%;
+    left: 14%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(9)
+{
+    top:80%;
+    left: 3%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(10)
+{
+    top:90%;
+    left: 15%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(11)
+{
+    top:87%;
+    left: 8%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(12)
+{
+    top:44%;
+    left: 10%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(13)
+{
+    top:50%;
+    left: 3%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(14)
+{
+    top:40%;
+    left: 7%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(15)
+{
+    top:60%;
+    left: 13%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(16)
+{
+    top:87%;
+    left: 20%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(17)
+{
+    top:68%;
+    left: 13%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(18)
+{
+    top:46%;
+    left: 13%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(19)
+{
+    top:73%;
+    left: 10%;
+    animation: illustion 3s linear infinite;
+}
+#maya .anka:nth-child(20)
+{
+    top:93%;
+    left: 3%;
+    animation: illustion 3s linear infinite;
+}
+@keyframes illustion
+{
+    from {
+        opacity: 1;
+        transform: rotate(360deg) scale(1) translateY(0);
+    } to {
+        transform: rotate(30deg) scale(0.5) translateY(20px);
+        opacity: 0.3;
+    } 
 }
 /*
     ------------------------
@@ -125,5 +303,5 @@ section
     }
 }
 /*
-    the end ================
+    the end =======================
 */
