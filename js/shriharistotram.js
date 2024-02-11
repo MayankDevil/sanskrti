@@ -51,7 +51,6 @@ try
             parivartan : `I worship the serpent at the lower end of the Vamanga of Rama, who has performed the yagya under his control, who has lost all desires and who is well-sung by the great sages and who is surrounded by the gods, Who is well versed in the ocean of virtues. worship.`
         }
     ]
-    // इति श्रीरावणकृतं शिवताण्डवस्तोत्रं सम्पूर्णम्।
     sumiran("shriharistotram", shriharistotram)
 
     document.title = `MayankDevil`

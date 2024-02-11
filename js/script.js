@@ -1,5 +1,5 @@
 /*
--   sanskrit "भारीतय सभ्यत "
+-   sanskrit " प्राचीन भारीतय सभ्यत "
 -   Designed | Develped by MayankDevil
 -   https://github.com/MayankDevil/sanskrti 
 -   JavaScript ./js/script.js
@@ -14,19 +14,39 @@ try
 
     function prakat(prastuti)
     {
-        return (`
-            <!-- ( bhag ) -->
+        if (prastuti.shlok == '')
+        {
+            return (`
+                <!-- ( bhag ) -->
 
-            <section class='bhag'>
-            
-                <div class='shlok'> ${ prastuti.shlok } </div>
+                <section class='bhag'>
 
-                <div class='arth'> ${ prastuti.arth } </div>
+                    <h3> ${ prastuti.arth } </h3>
 
-                <div class='parivartan'> ${ prastuti.parivartan } </div>
+                    <div class='arth'>  </div>
 
-            </section>
-        `)
+                    <div class='parivartan'> ${ prastuti.parivartan } </div>
+
+                </section>
+            `)
+        }
+        else
+        {
+
+            return (`
+                <!-- ( bhag ) -->
+                
+                <section class='bhag'>
+                
+                    <div class='shlok'> ${ prastuti.shlok } </div>
+                    
+                    <div class='arth'> ${ prastuti.arth } </div>
+                    
+                    <div class='parivartan'> ${ prastuti.parivartan } </div>
+                
+                </section>
+            `)
+        }
     }
 
     /*

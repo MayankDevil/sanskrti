@@ -57,7 +57,6 @@ try
             parivartan : ` Those who recite the Ashtak of Kalabhairava attain enlightenment and liberation and their wonderful qualities increase. People definitely seek refuge at the feet of the one who stops fear from death and destroys sorrow, attachment, sorrow, greed, anger and anguish. `
         }
     ]
-    //
     sumiran("kaalabhiravam", kaalabhiravam)
 
     document.title = `MayankDevil`
