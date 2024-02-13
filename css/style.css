@@ -145,150 +145,63 @@ h3
     left: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* height: 50vh; */
-    /* width: 30%; */
-    padding: 1rem;
+    grid-template-rows: repeat(20,50px);
+    height: 100vh;
+    width: 100px;
     background:transparent;
 }
+/* #maya > .anka
+{
+    border: 1px dotted #442433;
+} */
 #maya .anka
 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 5;
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #442433;
-}
-#maya .anka:nth-child(1)
-{
-    top:2%;
-    left: 5%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(2)
-{
-    top:10%;
-    left: 3%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(3)
-{
-    top:19%;
-    left: 4%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(4)
-{
-    top:30%;
-    left: 15%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(5)
-{
-    top:25%;
-    left: 13%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(6)
-{
-    top:90%;
-    left: 3%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(7)
-{
-    top:33%;
-    left: 3%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(8)
-{
-    top:70%;
-    left: 14%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(9)
-{
-    top:80%;
-    left: 3%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(10)
-{
-    top:90%;
-    left: 15%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(11)
-{
-    top:87%;
-    left: 8%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(12)
-{
-    top:44%;
-    left: 10%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(13)
-{
-    top:50%;
-    left: 3%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(14)
-{
-    top:40%;
-    left: 7%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(15)
-{
-    top:60%;
-    left: 13%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(16)
-{
-    top:87%;
-    left: 20%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(17)
-{
-    top:68%;
-    left: 13%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(18)
-{
-    top:46%;
-    left: 13%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(19)
-{
-    top:73%;
-    left: 10%;
-    animation: illustion 3s linear infinite;
-}
-#maya .anka:nth-child(20)
-{
-    top:93%;
-    left: 3%;
-    animation: illustion 3s linear infinite;
+    animation: illustion 1s step-start infinite ;
 }
 @keyframes illustion
 {
-    from {
-        opacity: 1;
-        transform: rotate(360deg) scale(1) translateY(0);
-    } to {
-        transform: rotate(30deg) scale(0.5) translateY(20px);
+    10% {
+        opacity: 0.1;
+        transform: translateY(10%);
+    }
+    20% {
+        transform:  translateY(20%);
         opacity: 0.3;
-    } 
+    }
+    30% {
+        transform:  translateY(30%);
+        opacity: 0.5;
+    }
+    40% {
+        transform:  translateY(40%);
+        opacity: 0.7;
+    }
+    50% {
+        transform:  translateY(50%);
+        opacity: 1;
+    }
+    60% {
+        transform:  translateY(60%);
+        opacity: 0.8;
+    }
+    70% {
+        transform: translateY(70%);
+        opacity: 1;
+    }
+    80% {
+        transform:  translateY(80%);
+        opacity: 0.5;
+    }
+    90% {
+        transform:  translateY(90%);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0.2;
+    }
 }
 /*
     ------------------------
