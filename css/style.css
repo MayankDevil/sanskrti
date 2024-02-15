@@ -69,7 +69,7 @@ section
 #main
 {
     text-align: center;
-}
+}    
 .container
 {
     max-width: 1000px;
@@ -98,9 +98,9 @@ h3
     font-weight: bold;
     border-bottom: 1px solid #442433;
 }
-.kala
+.chhaya
 {
-    clip-path: polygon(0 0, 0 100%, 100% 100%, 86% 86%, 71% 79%, 69% 61%, 42% 49%, 35% 31%, 14% 24%);
+    clip-path: polygon(59% 63%, 73% 67%, 80% 53%, 81% 35%, 90% 26%, 100% 0, 100% 100%, 0 100%, 15% 94%, 26% 83%, 41% 82%, 51% 77%);
     background:#ffffff;
 }
 /*
@@ -121,7 +121,7 @@ h3
     padding: 1rem 2rem;
     font-size: 5.5rem;
     background: #fee4d3;
-    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    animation: virath 5s linear infinite ;
 }
 /*
     footer css --------------------
@@ -150,10 +150,10 @@ h3
     width: 100px;
     background:transparent;
 }
-/* #maya > .anka
+/*#maya > .anka
 {
     border: 1px dotted #442433;
-} */
+}*/
 #maya .anka
 {
     padding: 10px;
@@ -201,6 +201,15 @@ h3
     100% {
         transform: translateY(100%);
         opacity: 0.2;
+    }
+}
+@keyframes virath
+{
+    from {
+        box-shadow:1px 2px 10px #442433;
+    } to {       
+        clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+        text-shadow:1px 2px 5px #442433;
     }
 }
 /*
