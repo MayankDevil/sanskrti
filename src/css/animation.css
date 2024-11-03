@@ -1,0 +1,305 @@
+
+.kala
+{
+    background: black;
+    min-height: 100vh;
+}
+
+#swagat
+{
+    display: block;
+}
+
+/* om logo */
+
+#logo_box
+{
+    display: inline-block;
+}
+#om_logo
+{
+    position: relative;
+    display: grid;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin:5rem auto;
+    padding-top:1rem;
+    text-align: center;
+    font-size:3rem;
+    font-weight: lighter;
+    color: var(--red);
+    /* background: var(--dark0); */
+    /* border:5px double var(--dark0); */
+    border-radius: 50%;
+}
+#om_logo::before,
+#om_logo::after
+{
+    content: '';
+    position: absolute;
+    z-index:3;
+    top: -2px;
+    left: -2px;
+    display: block;
+    height: 100px;
+    width: 100px;
+    border: 1px solid var(--dark0);
+    border-radius: 50%;
+    animation: range 1.5s linear  infinite;
+}
+#om_logo::after
+{
+    animation-delay:0.5s;
+}
+
+
+
+@keyframes range
+{
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+/* tara */
+
+.tara
+{
+    position: absolute;
+    z-index: 5;
+    display: inline-block;
+    left: 70%;
+    top:50%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background: var(--orange);
+    box-shadow: 5px 5px 150px var(--orange);
+    animation: glowing 3s linear infinite alternate;
+}
+@keyframes glowing
+{
+    from {
+        background: var(--yellow);
+        box-shadow: 5px 5px  150px 15px var(--yellow2);
+    } to {
+        background: var(--red);
+        box-shadow: 5px 5px 150px 15px var(--red4);
+    }
+}
+
+/* maya : illustion css */
+
+#maya
+{
+    position: absolute;
+    z-index:0;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(20,50px);
+    height: 100vh;
+    width: 100%;
+    background:transparent;
+}
+/*#maya > .anka
+{
+    border: 1px dotted #442433;
+}*/
+#maya .anka
+{
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    color:var(--dark1);
+    animation: illustion 2s linear infinite ;
+}
+@keyframes illustion
+{
+    10% {
+        opacity: 0.1;
+        transform: translateY(10%);
+    }
+    20% {
+        transform:  translateY(20%);
+        opacity: 0.3;
+    }
+    30% {
+        transform:  translateY(30%);
+        opacity: 0.5;
+    }
+    40% {
+        transform:  translateY(40%);
+        opacity: 0.7;
+    }
+    50% {
+        transform:  translateY(50%);
+        opacity: 1;
+    }
+    60% {
+        transform:  translateY(60%);
+        opacity: 0.8;
+    }
+    70% {
+        transform: translateY(70%);
+        opacity: 1;
+    }
+    80% {
+        transform:  translateY(80%);
+        opacity: 0.5;
+    }
+    90% {
+        transform:  translateY(90%);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0.2;
+    }
+}
+
+/* aayat */
+
+#aayat
+{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    background: url(../../public/wave.png);
+    border: 1px solid var(--dark0);
+}
+.shatkon
+{
+    position:absolute;
+    display: inline-block;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background:rgb(255, 230, 156, 0.5);
+    opacity: 0.3;
+    backdrop-filter: blur(50px);
+    box-shadow: 5px 5px 150px var(--orange)
+}
+.shatkon:hover
+{
+    opacity: 1;
+    transform: scale(0.9);
+}
+.shatkon:nth-child(1)
+{
+    left:20%;
+    top:30%;
+    width:40px;
+    height: 40px;
+}
+.shatkon:nth-child(2)
+{
+    left:40%;
+    top:10%;
+    width:50px;
+    height: 50px;
+}
+.shatkon:nth-child(3)
+{
+    left:70%;
+    top:15%;
+    width:75px;
+    height: 75px;
+}
+.shatkon:nth-child(4)
+{
+    left:35%;
+    top:80%;
+    width:60px;
+    height: 60px;
+}
+.shatkon:nth-child(5)
+{
+    left:20%;
+    top:30%;
+    width:40px;
+    height: 40px;
+}
+.shatkon:nth-child(6)
+{
+    left:80%;
+    top:70%;
+    width:100px;
+    height: 100px;
+}
+.shatkon:nth-child(7)
+{
+    left:10%;
+    top:60%;
+    width:30px;
+    height: 30px;
+}
+#chin
+{
+    position: absolute;
+    top: calc(40% - 100px);
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    /* padding: 5%; */
+    /* background: var(--dark0); */
+    border-radius: 50%;
+    border: 2px solid var(--orange3);
+    box-shadow: 0 5px 10px 0 var(--yellow);
+    animation: chakr 3s linear infinite;
+}
+
+@keyframes chakr
+{
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+#prateek
+{
+    position: absolute;
+    z-index: initial;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    padding:4rem;
+    text-align: center;
+    font-size: 4rem;
+    color:var(--orange3);
+    border-radius: 50%;
+    animation: chakra 3s linear infinite;
+}
+@keyframes chakra
+{
+    from {
+        transform: rotate(360deg);
+    } to {
+        transform: rotate(0deg);
+    }
+}
+#chin::before
+{
+    position: absolute;
+    top:50%;
+    left: -15px;
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    pad: 1rem;
+    background: var(--dark0);
+    border-radius: 50%;
+}
